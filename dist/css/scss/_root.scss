@@ -1,0 +1,53 @@
+/**
+  * AlienExpress
+  * Copyright 2021 Mitchel Jansen (https://github.com/Mitchel)
+  *
+  * Author: Mitchel Jansen <mitchel@mexter.nl>
+  */
+
+:root {
+  --fontBase: "Poppins", "Raleway", "Roboto", sans-serif;
+  --fontSize: 13px;
+}
+
+// Colors
+
+:root {
+  --colorBackground: #f7f7f7;
+  --colorText: 102, 102, 102;
+
+  --colorPrimary: #ca301e;
+  --colorPrimaryHover: #a63629;
+  --colorSecondary: 108, 117, 125;
+  --colorSecondaryHover: 84, 91, 98;
+  --colorSuccess: #2ecc71;
+  --colorSuccessHover: #27ae60;
+  --colorDanger: #e74c3c;
+  --colorDangerHover: #c0392b;
+  --colorWarning: #f1c40f;
+  --colorWarningHover: #e0a800;
+  --colorInfo: #3498db;
+  --colorInfoHover: #2980b9;
+  --colorLight: #f8f9fa;
+  --colorLightHover: #e2e6ea;
+  --colorDark: #2d3436;
+  --colorDarkHover: #23272b;
+  --colorLink: #007bff;
+  --colorLinkHover: #0056b3;
+  --colorWhite: 255, 255, 255;
+}
+
+// Cards
+
+:root {
+  --cardsBackground: 255,255,255;
+  --cardsCodeBackground: 249,249,249;
+  --cardsShadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);
+  --cardsBorderRadius: 5px;
+  --cardsTitlePadding: 0 20px 0 20px;
+  --cardsCodePadding: 25px 30px 5px 30px;
+  --cardsPadding: 20px;
+  --cardsDivider: 1px;
+  --cardsBorderColor: 240,240,240;
+  --cardsColorTitle: 25,26,28;
+}

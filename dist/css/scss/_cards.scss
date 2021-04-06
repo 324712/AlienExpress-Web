@@ -1,0 +1,120 @@
+/**
+  * AlienExpress
+  * Copyright 2021 Mitchel Jansen (https://github.com/Mitchel)
+  *
+  * Author: Mitchel Jansen <mitchel@mexter.nl>
+  */
+
+
+.blox-card {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 20px;
+  background: rgb(var(--cardsBackground));
+  box-shadow: var(--cardsShadow);
+  border-radius: var(--cardsBorderRadius);
+  overflow: hidden;
+
+  .blox-card-imageTop {
+    height: 250px;
+    width: 100%;
+    display: block;
+    border-top-left-radius: var(--cardsBorderRadius);
+    border-top-right-radius: var(--cardsBorderRadius);
+    background: url(https://via.placeholder.com/500);
+    background-repeat: no-repeat!important;
+    background-size: cover!important;
+    background-position: center center!important;
+  }
+
+  .blox-card-head {
+    position: relative;
+    padding: var(--cardsPadding);
+    align-items: center;
+    border-bottom: var(--cardsDivider) solid rgb(var(--cardsBorderColor));
+
+    .blox-card-title {
+      color: rgba(var(--cardsColorTitle),0.75);
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .blox-card-titleRight {
+      color: rgba(var(--cardsColorTitle),0.5);
+      font-size: 12px;
+      font-weight: 400;
+      float: right;
+      display: inline-block;
+    }
+
+    .blox-card-subtitle {
+      color: rgba(var(--cardsColorTitle),0.4);
+      font-weight: 400;
+      display: block;
+      margin-top: 3px;
+    }
+  }
+
+  .blox-card-body {
+    position: relative;
+    display: block;
+    padding: var(--cardsPadding);
+    flex: 1 1 auto;
+
+    &.no-padding {
+      padding: 0;
+    }
+
+    &.border {
+      border-bottom: var(--cardsDivider) solid rgb(var(--cardsBorderColor));
+    }
+
+    form {
+      strong {
+        font-weight: 500;
+        font-size: 13px;
+
+        span {
+          color: #ca301e;
+          margin-left: 2px;
+        }
+      }
+
+      input {
+        margin-top: 10px;
+        margin-bottom: 15px;
+
+        &.nt {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    p {
+      margin: 0 0 15px 0;
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+
+  .blox-card-footer {
+    border-top: var(--cardsDivider) solid rgb(var(--cardsBorderColor));
+    padding: var(--cardsPadding);
+    align-items: center;
+  }
+
+  .blox-card-button {
+    .btn-group {
+      width: 110.4%;
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px;
+
+      .btn {
+        margin-bottom: 0px !important;
+        border-radius: 0px !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,245 @@
+/**
+  * AlienExpress
+  * Copyright 2021 Mitchel Jansen (https://github.com/Mitchel)
+  *
+  * Author: Mitchel Jansen <mitchel@mexter.nl>
+  */
+
+// Import extern SCSS files from SCSS folder.
+@import "root";
+@import "fonts";
+@import "buttons";
+@import "cards";
+@import "badges";
+
+// NOTICE FOR :root
+// Import color with RGBA from root:      rgba(var(--colorName),1)
+// Import simple var from root:           var(--varName)
+
+body, html {
+  background: var(--colorBackground);
+  font-family: var(--fontBase);
+  font-size: var(--fontSize);
+  color: rgba(var(--colorText),1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.mb12 {
+  margin-bottom: 10px !important;
+}
+
+.uk-nav>li>a {
+  font-size: var(--fontSize);
+}
+
+.uk-nav li>a {
+  font-size: var(--fontSize);
+}
+
+.btn-header {
+  margin-top: -2px;
+}
+
+.uk-navbar-container:not(.uk-navbar-transparent) {
+  margin-bottom: 0;
+  background: #fff;
+}
+
+.uk-navbar-nav>li>a {
+  text-transform: none;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  color: #000;
+}
+
+.uk-navbar-nav {
+  padding: 35px 0;
+}
+
+.uk-logo {
+  img {
+    width: 130px;
+    margin: 20px 35px;
+  }
+}
+
+#hero-banner {
+  height: 550px;
+  width: 100%;
+  background: linear-gradient(65deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hero/hero-4.jpg);
+  background-size: auto 100%, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-position: 100%, center -400px;
+
+  &.courses {
+    height: 300px;
+  }
+
+
+  .hero-text {
+    margin: 0 auto;
+    padding: 165px 0;
+    max-width: 600px;
+
+    &.courses {
+      padding: 75px 0;
+    }
+
+    h1 {
+      color: #fff;
+      text-shadow: 0 5px rgb(0 0 0 / 50%);
+      font-size: 3.5rem;
+
+      span {
+        color: red;
+      }
+    }
+  }
+
+
+}
+
+#hero-action {
+  margin-top: -95px;
+  margin-bottom: 75px;
+
+  i {
+    color: var(--colorInfo);
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-shadow: 0 7px rgb(0 0 0 / 5%);
+  }
+
+  h6 {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+  }
+
+}
+
+.badge {
+  &.score {
+    float: right;
+    margin: -2px 0;
+  }
+}
+
+.uk-alert {
+  margin-bottom: -20px !important;
+  padding: 20px;
+
+  p {
+    margin: 0;
+  }
+}
+
+.uk-alert-warning {
+  color: #666 !important;
+}
+
+#sub-footer {
+  border-top: 1px solid rgba(0,0,0,0.1);
+  padding: 50px 0;
+  background: rgba(255,255,255,0.5);
+
+  h6 {
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    color: var(--colorInfo);
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      a {
+        color: rgba(var(--colorText),1);
+
+        &:hover {
+          color: rgba(var(--colorText),.8);
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+#footer {
+  background: #fff;
+  padding: 20px 0;
+  border-top: 1px solid rgba(0,0,0,.1);
+  width: 100%;
+}
+
+// Registration
+
+#registration {
+  margin: 50px 0;
+
+  img {
+    width: 200px;
+    margin-bottom: 50px;
+  }
+}
+
+.mt5 {
+  margin-top: 5px !important;
+  float: left;
+}
+
+// Add course
+
+.uk-form-horizontal .uk-form-label {
+  width: 200px;
+  float: left;
+  font-size: 13px;
+  padding: 21px 0;
+  margin: 0;
+  font-weight: 500;
+}
+
+.courses-a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+// Admin
+
+.mt-gender {
+  margin-top: 33px !important;
+}
+
+.mt-gender-circle {
+  margin-right: 5px !important;
+}
+
+.mt-10 {
+  margin-top: 10px !important;
+}
+
+.fa-trash-alt {
+  color: red;
+  font-size: 15px;
+}
+
+.fa-edit {
+  color: #3498db;
+  font-size: 15px;
+}
