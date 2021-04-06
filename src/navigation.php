@@ -3,7 +3,7 @@
         <p>Benieuwd naar de admin-mogelijkheden binnen AlienExpress? <a href="admin/index.php">Log in</a> met ons demoaccount</p>
         <p><strong>E-mail:</strong> demo@demo.nl - <strong>Wachtwoord</strong> demo<br/><br/></p>
         <p>
-            <a class='btn btn-secondary btn-sm' href='https://github.com/Mitchel/AlienExpress-Web'>GitHub Repo</a>
+            <a class='btn btn-secondary btn-sm' href='https://github.com/MitchelMBO/AlienExpress-Web'>GitHub Repo</a>
         </p>
     </div>
 </div>
